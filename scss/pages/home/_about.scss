@@ -1,0 +1,118 @@
+.about {
+  padding: 12rem 0 0;
+  .items-wrap {
+    padding: 9rem 11.3rem 11.7rem;
+    display: flex;
+    gap: 2.1rem;
+    align-items: center;
+    position: relative;
+    .item {
+      padding: 3.3rem 3.4rem 5.9rem;
+      background: #fff;
+      box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
+      border-radius: 1px;
+      width: 30%;
+      height: 33.75rem;
+      position: relative;
+      z-index: 1;
+      .icon {
+        width: fit-content;
+        height: fit-content;
+        padding: 1.92rem;
+        border-radius: 1rem;
+        background: #fff0e7;
+      }
+      span {
+        color: var #2c2c2c;
+        font-family: Inter;
+        font-size: 4.3333rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        display: inline-block;
+        margin: 2.3rem 0;
+      }
+      p {
+        color: #2c2c2c;
+        font-family: Inter;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3.0833rem; /* 154.167% */
+      }
+    }
+    .midle {
+      width: 40%;
+      height: 39.25rem;
+      z-index: 2;
+      .icon {
+        background: #f2ffec;
+      }
+    }
+    img {
+      position: absolute;
+      opacity: 0.7;
+      &.round-2 {
+        top: 0;
+        left: 0;
+      }
+      &.round-1 {
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .about {
+    .items-wrap {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .item {
+        width: 48%;
+        flex-shrink: 0;
+      }
+      .midle {
+        width: 100%;
+        order: 2;
+        height: 33.75rem;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .about {
+    padding: 8rem 0 0;
+    .items-wrap {
+      padding: 2rem;
+      img {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 499px) {
+  .about {
+    .items-wrap {
+      padding: 2rem 0;
+      .item {
+        width: 46%;
+        height: 28rem;
+        padding: 2rem;
+        .icon {
+          padding: 0.8rem;
+        }
+        span {
+          font-size: 3rem;
+          margin: 1rem 0;
+        }
+        p {
+          font-size: 1.6rem;
+        }
+      }
+      .midle {
+        width: 100%;
+      }
+    }
+  }
+}
