@@ -34,10 +34,25 @@
         }
       }
       .btn-1 {
+        display: flex;
         width: 10.5rem;
         margin-left: auto;
       }
     }
   }
 }
-@media (max-width: );
+@media (max-width: 767px) {
+  .contact_form{
+    .form_wrap{
+      .image{
+        display: none;
+      }
+      form{
+        width: 100%;
+        .title-2{
+        text-align: center;
+        }
+      }
+    }
+  }
+}

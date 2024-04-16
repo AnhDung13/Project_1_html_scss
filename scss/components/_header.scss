@@ -81,6 +81,9 @@
       display: flex;
       align-items: center;
       gap: 5rem;
+      svg {
+        cursor: pointer;
+      }
     }
   }
 }
