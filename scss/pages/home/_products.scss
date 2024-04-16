@@ -61,7 +61,7 @@
         }
       }
       .btn-1 {
-        margin-top: 3.1rem;
+        margin: 3.1rem 0;
       }
     }
   }
@@ -71,6 +71,10 @@
     .products-wrap {
       padding: 5rem 0 0;
       overflow: auto;
+      &::-webkit-scrollbar {
+        height: 4px;
+        background-color: #f5f5f5;
+      }
       > .row {
         flex-wrap: nowrap;
       }

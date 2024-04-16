@@ -52,17 +52,16 @@
           position: absolute;
           background-color: #46b20f;
           bottom: -200%;
-          left: 0;
-          right: 0;
           height: 2px;
-          display: none;
+          width: 0;
+          transition: 0.3s ease-in-out;
         }
         &:hover {
           color: #46b20f;
         }
         &:hover::before,
         &:hover .active {
-          display: block;
+          width: 100%;
         }
       }
       .esc {

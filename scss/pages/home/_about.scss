@@ -3,7 +3,8 @@
   .items-wrap {
     padding: 9rem 11.3rem 11.7rem;
     display: flex;
-    gap: 2.1rem;
+    justify-content: space-between;
+    gap: 1rem;
     align-items: center;
     position: relative;
     .item {
@@ -67,13 +68,13 @@
   .about {
     .items-wrap {
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       .item {
         width: 48%;
         flex-shrink: 0;
       }
       .midle {
-        width: 100%;
+        width: 48%;
         order: 2;
         height: 33.75rem;
       }
@@ -84,7 +85,7 @@
   .about {
     padding: 8rem 0 0;
     .items-wrap {
-      padding: 2rem;
+      padding: 0;
       img {
         display: none;
       }
@@ -94,13 +95,15 @@
 @media (max-width: 499px) {
   .about {
     .items-wrap {
-      padding: 2rem 0;
       .item {
-        width: 46%;
-        height: 28rem;
-        padding: 2rem;
+        height: 26rem;
+        padding: 1.2rem;
         .icon {
           padding: 0.8rem;
+          svg {
+            width: 4rem;
+            height: 4rem;
+          }
         }
         span {
           font-size: 3rem;
@@ -111,7 +114,7 @@
         }
       }
       .midle {
-        width: 100%;
+        width: 46%;
       }
     }
   }
